@@ -199,8 +199,10 @@ function animate() {
     }
   }
 
+  //This Function updates
   controls.update();
   renderer.render(scene, camera);
 }
 
+//This function animates
 animate();
