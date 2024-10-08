@@ -1,0 +1,74 @@
+/* General body settings */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Positioning for the Button containers */
+.ButtonLeft, .ButtonRight {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Place the left buttons to the extreme left */
+.ButtonLeft {
+    top: 20%;
+    left: 5%; /* Set the buttons to the extreme left */
+}
+
+/* Place the right buttons to the extreme right */
+.ButtonRight {
+    top: 13%;
+    right: 5%; /* Set the buttons to the extreme right */
+}
+
+/* Common styling for all buttons */
+.ButtonLeft button, .ButtonRight button {
+    font-size: 12px; /* Icon size */
+    width: 30px; /* Button width */
+    height: 30px; /* Button height */
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 6px; /* Space between buttons */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Specific margin for right buttons */
+.ButtonRight button {
+    margin-bottom: 5px;
+}
+
+/* Hover effect */
+.ButtonLeft button:hover, .ButtonRight button:hover {
+    background-color: white;
+    color: black; /* Invert color on hover */
+    transform: scale(1.1);
+}
+
+/* Selected button style */
+.ButtonLeft button.selected, .ButtonRight button.selected {
+    background-color: white; /* Different color for selected */
+    color: black; /* Text color changes */
+    border: 2px solid white; /* Thicker border */
+    transform: scale(1.15); /* Slightly larger scale for selected */
+}
+
+/* Progress container styling */
+#progress-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}

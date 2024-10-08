@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>3D Simulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="heading">
+        <div class="border"></div>
+    </div>
+    <div id="progress-container">
+        <div id="progress"></div>
+    </div>
+    <div class="ButtonLeft">
+        <div id="dog">
+            <button>&#128021;</button>
+        </div>
+        <div id="cat">
+            <button>&#128008;</button>
+        </div>
+        <div id="tiger">
+            <button>&#128005;</button>
+        </div>
+    </div>
+    
+    <div class="ButtonRight">
+        <div id="playsound">
+            <button><i class="fa-solid fa-volume-high"></i></button>
+        </div>
+        <div id="jump">
+            <button><i class="fa-solid fa-arrow-turn-up"></i></button>
+        </div>
+        <div id="turnleft">
+            <button><i class="fa-solid fa-arrow-rotate-right"></i></button>
+        </div>
+        <div id="turnright">
+            <button><i class='fas fa-undo'></i></button>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
